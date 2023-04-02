@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Igreja Presbiteriana Nova Jeruzalem</title>
     <link rel="stylesheet" href="estilo/style.css">
+    <script src="script.js" defer></script>
     
 </head>
 <body>
@@ -13,13 +14,10 @@
     <header>
         <div id="hd">
             <h1>Igreja Presbiteriana Nova Jeruzalém</h1>
-          
-              
                     <picture>
                         <source media="(max-width: 1000px )" srcset="">
                         <img src="imagens/ipb1.png" alt="logo" id="logo">
                     </picture>
-                
         </div>
 
         <nav>
@@ -45,35 +43,47 @@
         </nav>
     </header>
 
-    <main>
+    
         <h1>Novidades</h1>
-         
-        <section id="novi">
-             <div>
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/9dk7OPymmVg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-             </div>
+       
+        <section class="slider">
+            <div class="slider-content">
 
-             <div>
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/5H8r63qBT-k" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-             </div>
-         
-             <div>
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/mLwUlhyvMUw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-             </div>
-            <!--
-             <div>
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/Hu8LHiL2dZc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-             </div>
-             -->
-        </section>
+                <input type="radio" name="btn-radio" id="radio1">
+                <input type="radio" name="btn-radio" id="radio2">
+                <input type="radio" name="btn-radio" id="radio3">
 
-        <h1>Videos Recomendados</h1>
-        <section id="rec">
-                <div><a href="https://www.youtube.com/watch?v=DBXAsoibbj8&list=PL1Z2NVKkOMekeTeL8QQbFrxuaKJvXzg5f" target="_blank">Recomendação</a></div>
-                <div><a href="https://www.youtube.com/watch?v=KtRMf6aSNoc&list=PL1Z2NVKkOMelfhvF-nAMlsdNUUT1q91F5" target="_blank">Recomendação</a></div>
-                <div><a href="https://www.youtube.com/@igrejapresbiteriananovajer3537/streams" target="_blank">Recomendação</a></div>
+                <div class="slide-box primeiro">
+                
+                        <img src="imagens/ipb1.png" alt="slide1" class="imgdesktop">
+                        <img src="imagens/dan-droids-pq.png" alt="slide1" class="imgmobile">
+                    
+                </div>
+
+                <div class="slide-box">
+                    <img src="imagens/sapato2.jpg" alt="slide2" class="imgdesktop">
+                    <img src="imagens/irina-blok-pq.jpg" alt="slide2" class="imgmobile">
+                </div>
+
+                <div class="slide-box">
+                    <img src="imagens/sapato3.jpg" alt="slide3" class="imgdesktop">
+                    <img src="imagens/bugdroid.png" alt="slide3" class="imgmobile">
+                </div>
+                
+                <div class="nav-auto">
+                    <div class="auto-btn1"></div>
+                    <div class="auto-btn2"></div>
+                    <div class="auto-btn3"></div>
+                </div>
+
+                <div class="nav-manual">
+                    <label for="radio1" class="manual-btn"></label>
+                    <label for="radio2" class="manual-btn"></label>
+                    <label for="radio3" class="manual-btn"></label>
+                </div>
+            </div>
         </section>
-    </main>
+    
 
     <footer>
         <p>redes sociais</p>
