@@ -89,7 +89,10 @@ nav ul  li {
 nav  p{
     display: none;
 }
-
+.h1{
+    text-align: center;
+    margin: 10px;
+}
 section.slider{
     margin: 0 auto;
     width: 100%;
@@ -99,8 +102,10 @@ section.slider{
 }
 
 .slider-content{
-    width: 400%;
-    height: auto;
+    max-width: 400%;
+    height: 100%;
+    padding-top: 20px;
+    border-radius: 15px;
     display: flex;
 }
 
