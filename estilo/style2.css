@@ -42,11 +42,6 @@ body{
     background-size: cover;
 }
 
-#celula{
-    background-image: url('../imagens/fundocelu.png');
-}
-
-
 a {
     text-decoration: none;
     color: black;
@@ -222,108 +217,36 @@ header h1{
     }
 }
 
-main section{
-    padding-top: 30px;
-}
-main{
+main h1 , main{
+    text-align: center;
+    background-color: white;
     max-width: 800px;
-    display: flex;
-    margin: auto;
-    background-color:white;
-    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.37);
-}
-main h1{
-    text-align: center !important;
-    font-family: var(--fonte3);
-}
-main div{
-    display: flex;
-}
-
-main a{
-    background-color: #009e5f4f;
-    border-radius: 5px;
-}
-main a:hover{
-    padding: 7px;
-}
-
-main p {
-    align-items: center;
-    text-align: justify;
-    margin: 2vh 2vw;
-    font-size: 1.2em;
-    font-family: var(--fonte1);
-
-}
-main div img{
-    height: 50vh;
-    width: 60vw;
-    margin: 0 auto;
-    gap: 20px;
-}
-
-@media(min-width: 850px){
-    main div img{
-        height: 40vh;
-        width: 50vw;
-        margin: 0 auto;
-        gap: 20px;
-    }
-}
-
-@media(min-width: 400px){
-    main div img{
-        height: 30vh;
-        width: 50vw;
-        margin: 0 auto;
-        gap: 20px;
-    }
-}
-
-footer{
-    color: white ;
-    background-image: linear-gradient(to bottom,#005131,#288d65 );
-    font-size: 1em;
-    padding-top: 10px;
-    text-align: center;
     margin: auto;
 }
-
-footer h1{
-    text-align: center;
-    
-}
-
-footer .redes{
-    display:block;
-    columns: 2;
-    justify-content: space-between;
-    
-  
-}
-
-
-.redes li{
-    display: flex;
-    margin-left: 30%;
-    gap: 1em;
-}
-
-.redes a {
-    font-size: 20px;
-    
-}
-
 
 #estu{
     display: flex;
-    padding-top: 40px;
 }
 
+#estu div iframe{
+    height: 300px;
+    width: 300px;
+    margin: 15px;
+    flex-wrap: wrap;
+    border-radius: 10px;
+}
 
-#play{
+#play  ul img{
+   height: 300px;
+   width: 300px;
+   margin: 10px 10px;
+}
+
+#play ul{
     display: flex;
-    margin: auto;
 }
 
+ul p{
+    text-align: justify;
+    margin: 10px;
+}
