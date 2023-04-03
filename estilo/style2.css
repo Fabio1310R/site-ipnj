@@ -34,7 +34,7 @@ ul, li ,a {
     padding: 0px;
 }
 body{
-   
+    text-align: center;
     background-image: url('../imagens/fundo2.png');
     background-position: center center;
     background-repeat: no-repeat;
@@ -262,10 +262,18 @@ main{
    margin: 10px 10px;
 }
 
+#play img{
+    box-shadow:-3px -3px -16px black;
+   border-radius: 10px;
+   background-attachment: fixed;
+}
+
 #play ul{
     display: flex;
     flex-wrap: wrap;
 }
+
+
 
 ul p{
     text-align: justify;
@@ -292,4 +300,24 @@ footer a , ul , li , img {
         display: block;
         columns: 2;
     }
+}
+
+@media (min-width:850px){
+      * {
+        margin: auto;
+        text-align: center;
+    }
+
+    #header{
+        display: flex;
+        text-align: center;
+        padding: 0;
+        height: 100px;
+    }
+
+    #nav{
+        margin: 0px !important;
+        height: 50px;
+    }
+
 }
