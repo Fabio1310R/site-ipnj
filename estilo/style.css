@@ -283,7 +283,7 @@ main div img{
 
 footer{
     color: white ;
-    background-image: linear-gradient(to bottom,#005131,#288d65 );
+    background-color: #005131;
     font-size: 1em;
     padding-top: 10px;
     text-align: center;
