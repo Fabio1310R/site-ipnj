@@ -29,7 +29,7 @@ ul, li ,a {
     
 }
 
-*body , ul {
+* body , ul {
     margin: 0px;
     padding: 0px;
 }
@@ -223,15 +223,21 @@ main h1 , main{
     max-width: 800px;
     margin: auto;
 }
+main{
+    margin-bottom: 0;
+}
 
 #estu{
     display: flex;
+    flex-wrap: wrap;
+    margin: auto;
 }
 
 #estu div iframe{
     height: 300px;
     width: 300px;
     margin: 15px;
+    gap: 20px;
     flex-wrap: wrap;
     border-radius: 10px;
 }
@@ -244,9 +250,25 @@ main h1 , main{
 
 #play ul{
     display: flex;
+    flex-wrap: wrap;
 }
 
 ul p{
     text-align: justify;
     margin: 10px;
+}
+
+footer{
+    text-align: center;
+    background-color: #005131;
+    padding-top: 30px;
+}
+
+footer a , ul , li , img {
+    display: flex;
+    columns: 2;
+    margin: auto;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
 }
