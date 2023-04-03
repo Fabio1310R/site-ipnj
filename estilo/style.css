@@ -34,11 +34,16 @@ ul, li ,a {
     padding: 0px;
 }
 body{
+   
     background-image: url('../imagens/fundo2.png');
     background-position: center center;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
+}
+
+#celula{
+    background-image: url('../imagens/fundocelu.png');
 }
 
 
@@ -214,6 +219,10 @@ header h1{
         margin: 1em 0em;
     }
 }
+
+main section{
+    padding-top: 30px;
+}
 main{
     max-width: 800px;
     display: flex;
@@ -232,6 +241,9 @@ main div{
 main p {
     align-items: center;
     text-align: justify;
+    margin: 2vh 2vw;
+    font-size: 1.2em;
+    font-family: var(--fonte1);
 
 }
 main div img{
@@ -257,4 +269,37 @@ main div img{
         margin: 0 auto;
         gap: 20px;
     }
+}
+
+footer{
+    color: white ;
+    background-image: linear-gradient(to bottom,#005131,#288d65 );
+    font-size: 1em;
+    padding-top: 10px;
+    text-align: center;
+    margin: auto;
+}
+
+footer h1{
+    text-align: center;
+    
+}
+
+footer .redes{
+    display:block;
+    columns: 2;
+    justify-content: space-between;
+    
+  
+}
+
+.redes li{
+    display: flex;
+    margin-left: 30%;
+    gap: 1em;
+}
+
+.redes a {
+    font-size: 20px;
+    
 }
