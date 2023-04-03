@@ -216,6 +216,19 @@ header h1{
         margin: 1em 0em;
     }
 }
+.h1{
+    width: 400px;
+    height: 30px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 0px;
+    font-family: var(--fonte3);
+    font-size: 25px;
+    background-image: linear-gradient(to right,#00513198,#06f19311);
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.336);
+    text-align: left;
+    
+}
 
 main h1 , main{
     text-align: center;
@@ -225,6 +238,7 @@ main h1 , main{
 }
 main{
     margin-bottom: 0;
+    padding-top: 10px;
 }
 
 #estu{

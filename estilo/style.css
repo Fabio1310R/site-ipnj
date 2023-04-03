@@ -285,9 +285,10 @@ footer{
     color: white ;
     background-color: #005131;
     font-size: 1em;
-    padding-top: 10px;
+    padding: 10px 0;
     text-align: center;
     margin: auto;
+
 }
 
 footer h1{
