@@ -272,3 +272,10 @@ footer a , ul , li , img {
     font-size: 20px;
     font-weight: bold;
 }
+
+@media (min-width: 400px){
+    footer ul ,li a , img{
+        display: block;
+        columns: 2;
+    }
+}
