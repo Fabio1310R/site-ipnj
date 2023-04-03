@@ -29,45 +29,232 @@ ul, li ,a {
     
 }
 
-header{
-    background-image: linear-gradient(to bottom,#005131, #206B4D);
-    padding-top: 30px;
+*body , ul {
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    background-image: url('../imagens/fundo2.png');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
 }
 
-header img{
-    height: 100px;
+
+a {
+    text-decoration: none;
+    color: black;
+    font-family: sans-serif;
+}
+
+a:hover{
+    background-color:#29976b;
+    text-decoration: underline;
+    border-radius: 6px;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.404);
+    transition: 0.6s;
+}
+#logo{
+    height: 50px;
+    width: 50px;
     border-radius: 50%;
-    align-items: end;
+    margin-top: 10px;
+   
 }
+
 header h1{
-    text-align: center;
-    color: white;
     font-family: var(--fonte2);
-}
-header a,p{
-    font-family: var(--fonte1);
+    font-variant: small-caps;
+    text-align: center;
+    margin-top: 30px;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.274);
     color: white;
-    font-size: bolder;
-}
-nav li{
-    display: inline-block;
-    margin: 5px;
-    padding: 5px;
-    border-radius: 5px;
-    color: white;
-    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.301);
-    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.315);
-}
-
-nav li p{
-    display: none;
     
 }
 
-nav li:hover  p{
+#header{
+    display: flex;
+    height: 70px;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+    box-sizing: border-box;
+    background-image: linear-gradient(to bottom,#005131,#288d65 );
+    padding: 40px  30px;
+    
+}
+
+#menu{
+    display: flex;
+    gap: .5rem;
+    list-style: none;
+}
+
+#menu a{
     display: block;
-    transition: 1s;
-    background-color: #206b4d34;
-    
+    padding: .5rem;
+    color: white;
+}
 
+#btn-mobile{
+    display: none;
+}
+
+@media(max-width: 600px){
+    #btn-mobile {
+        display: block;
+    }
+    #nav #menu{
+        display: block;
+        visibility: hidden;
+        overflow: hidden;
+    }   
+        
+    #menu {
+       margin-top: 90px;
+        position: absolute;
+        width: 100%;
+        top:59px;
+        right: -60%;
+        height: 0px;
+        transition: .6s;
+        background-color: #206B4D;
+        display: block;
+        height: 0px;
+        z-index: 1000;
+    }
+
+    #nav.active #menu{
+        visibility: visible;
+        height: calc(45vh - 70px);
+        
+        border-radius: 0px 0px 0px 10px;
+        box-shadow: 1px 1px 1px black;
+        overflow-y: auto;
+        margin-top: 90px;
+
+    }
+
+    #menu a{
+        padding:1rem 0 ;
+        margin: 0px 1rem;
+        border-bottom: 2px solid rgba(0, 0, 0, 0.151);
+    }
+
+    #btn-mobile{
+        display: flex;
+        padding: .5rem 1rem ;
+        border: none;
+        font-size: 1rem;
+        background: none;
+        gap: 1rem;
+        cursor: pointer;
+        color: white;
+
+    }
+
+    #hamburguer{
+        border-top: 2px solid;
+        width: 20px;
+    }
+
+    #hamburguer::after ,#hamburguer::before{
+        content: '';
+        display: block;
+        width: 20px;
+        height: 2px;
+        margin-top: 5px;
+        background: currentColor;
+        transition: .6s;
+        position: relative;
+
+    }
+
+    #nav.active #hamburguer {
+        border-top-color: transparent;
+    }
+
+    #nav.active #hamburguer::before{
+           transform: rotate(135deg);
+    }
+
+    #nav.active #hamburguer::after {
+      transform: rotate(-135deg);
+      top: -7px;
+    }
+}
+
+@media (max-width: 600px){
+    #header{
+        height: 150px;
+    }
+
+    #btn-mobile{
+        margin-top: 100px;
+    }
+
+}
+
+@media (min-width:600px){
+    #header{
+        height: 150px;
+    }
+    
+    #menu{
+        margin-top: 8rem;
+    }
+
+}
+
+@media (min-width: 1000px){
+    #logo{
+        height: 100px;
+        width: 100px;
+        margin: 1em 0em;
+    }
+}
+main{
+    max-width: 800px;
+    display: flex;
+    margin: auto;
+    background-color:white;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.37);
+}
+main h1{
+    text-align: center;
+    font-family: var(--fonte3);
+}
+main div{
+    display: flex;
+}
+
+main p {
+    align-items: center;
+    text-align: justify;
+
+}
+main div img{
+    height: 50vh;
+    width: 60vw;
+    margin: 0 auto;
+    gap: 20px;
+}
+
+@media(min-width: 850px){
+    main div img{
+        height: 40vh;
+        width: 50vw;
+        margin: 0 auto;
+        gap: 20px;
+    }
+}
+
+@media(max-width: 400px){
+    main div img{
+        height: 10vh;
+        width: 30vw;
+        margin: 0 auto;
+        gap: 20px;
+    }
 }
