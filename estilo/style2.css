@@ -187,35 +187,7 @@ header h1{
     }
 }
 
-@media (max-width: 600px){
-    #header{
-        height: 150px;
-    }
 
-    #btn-mobile{
-        margin-top: 100px;
-    }
-
-}
-
-@media (min-width:600px){
-    #header{
-        height: 150px;
-    }
-    
-    #menu{
-        margin-top: 8rem;
-    }
-
-}
-
-@media (min-width: 1000px){
-    #logo{
-        height: 100px;
-        width: 100px;
-        margin: 1em 0em;
-    }
-}
 .h1{
     width: 400px;
     height: 30px;
@@ -295,32 +267,99 @@ footer a , ul , li , img {
     font-weight: bold;
 }
 
-@media (min-width: 400px){
+
+
+@media (min-width: 1000px){
+    #logo{
+        height: 60px;
+        width:60;
+        margin: 1em 0em;
+    }
+    #header{
+        padding: 20px;
+    }
+    main{
+        text-align: center;
+        background-color: aqua;
+    }
+
+    main img{
+        margin: auto !important;
+    }
+
+    #header h1{
+        font-size: 30px;
+        margin-top: 0px;
+        margin-bottom: 1vh;
+        display: inline-block;
+    }
+    .img{
+      margin: auto;
+    }
+
+    .vid{
+        margin: auto
+    }
+}
+
+@media (max-width:900px){
+
+    #header{
+        display: flex;
+        text-align: center;
+        padding: 0;
+        height: 150px;
+    }
+    #header h1{
+        font-size: 28px;
+        margin: 20px;
+    }
+
+    main{
+        display: flex;
+        box-sizing: border-box;
+        flex-wrap: wrap;
+        text-align: center !important;
+    }
+
+      
+    main img{
+        margin:auto !important;
+    }
+    #logo{
+        margin-top: 0px;
+        margin-bottom: 1vh;
+        height: 100px;
+        width: 100px;
+    }
+    .img{
+        margin: auto;
+      }
+  
+      .vid{
+          margin: auto
+      }
+}
+
+@media (max-width: 600px){
+    #header{
+        height: 150px;
+    }
+
+    #btn-mobile{
+        margin-top: 100px;
+    }
+
     footer ul ,li a , img{
         display: block;
         columns: 2;
     }
     body, header , main{
         width: 100%;
+       
     }
-}
-
-@media (min-width:850px){
-      * {
-        margin: auto;
-        text-align: center;
+    iframe{
+        margin-left: 90px !important;
     }
-
-    #header{
-        display: flex;
-        text-align: center;
-        padding: 0;
-        height: 100px;
-    }
-
-    #nav{
-        margin: 0px !important;
-        height: 50px;
-    }
-
+  
 }
