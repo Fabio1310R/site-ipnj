@@ -300,6 +300,9 @@ footer a , ul , li , img {
         display: block;
         columns: 2;
     }
+    body, header , main{
+        width: 100%;
+    }
 }
 
 @media (min-width:850px){
