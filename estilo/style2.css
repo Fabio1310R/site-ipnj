@@ -341,9 +341,10 @@ footer a , ul , li , img {
       }
 }
 
-@media (max-width: 600px){
+@media (min-width:400px){
     #header{
         height: 150px;
+        width: 100%;
     }
 
     #btn-mobile{
@@ -354,8 +355,9 @@ footer a , ul , li , img {
         display: block;
         columns: 2;
     }
-    body, header , main{
+    main{
         width: 100%;
+        background-color: #009e5f5b;
        
     }
     iframe{
