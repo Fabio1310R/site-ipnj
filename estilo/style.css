@@ -120,10 +120,14 @@ main h1{
 
 }
 
+#bancel{
+  display: none;
+}
 
-@media(max-width:1000px){
+
+@media (min-width:1250px){
   #bancel{
-    display: none;
+    display: block;
   }
 
 }
@@ -137,37 +141,34 @@ main section{
   display: none;
 }
 
-@media(max-width: 600px){
+@media(max-width: 600px), (max-width: 1400px){
   #ban2{
     display: block;
-    height: 200px;
+    height: 300px;
     width: 100vw;
     margin-bottom: 30px;
     margin-top: -80px;
 
   }
 
-    .banner img{
-      width:100vw;
-    }
-    
-    .banner{
-      background-image: none;
-    }
-    .aovivo div{
-      padding: 35px;
-      margin: 0px;
-    }
+  .aovivo{
+    display: flex;
+    margin: auto;
+  }
   
-    .aovivo{
-      width: 100vw;
-      margin: 0px;
-    }
+  .aovivo div, img , p{
+    margin-top: 10px;
+  }
+  .aovivo div , p{
+    display: flex;
+    margin: auto;
+  }
+
+  .aovivo p{
+    font-size: 1.5em;
+
+  }
   
-    .aovivo img{
-      width: 300px; 
-      margin: auto;
-    }
     
      .agenda ,div{
       width: 100vw;
@@ -184,7 +185,9 @@ main section{
 }
 
 /*Section 1*/
-
+ .aovivo{
+  background-color: gray;
+ }
 .aovivo{
   display: flex;
   flex-wrap: wrap;
@@ -192,6 +195,7 @@ main section{
 
 .aovivo div{
   margin: 10px;
+  text-align: center;
 }
 .aovivo div img{
   height: 301px;
@@ -206,11 +210,23 @@ main section{
 }
 
 #bancel{
+  border-radius: 5px;
   height: 400px;
   width: 300px;
-  margin-top: 50px;
   position: absolute;
+  margin-left: 150px;
 }
+
+@media(min-width:300px),(max-width:550px){
+  .aovivo div{
+    display: block;
+    text-align: center;
+  }
+}
+
+ 
+
+
 
 
 /*SECTION AGENDA*/
@@ -220,9 +236,9 @@ main section{
 }
 
 #agenda{
-  display:flex;
+  display:flex !important;
   flex-wrap: wrap !important;
-  background-color: rgba(128, 128, 128, 0.267);
+  background-color: white;
   width: 100vw;
 }
 
@@ -246,7 +262,7 @@ main section{
 }
 
 #vid div video{
-  height: 60vh;
+  height: 50vh;
   width: 100vw;
 }
 
@@ -261,14 +277,13 @@ main section{
 
 footer{
   height: 100px;
-  background: linear-gradient(to right, #1d4010, #1e4d0c, #24690b);
+  background: rgb(73, 72, 72);
 }
 
 footer h1{
+  color: rgba(255, 255, 255, 0.719);
   text-align: center;
-  font-family: 'Open Sans', sans-serif;
-  font-variant: small-caps;
-  
+  font-family: 'Open Sans', sans-serif; 
 }
 
 footer ul{
