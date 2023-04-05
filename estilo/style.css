@@ -142,7 +142,11 @@ main h1{
   .aovivo img{
     width: 100vw; 
   }
-   
+  
+  .agenda{
+    width: 100vw;
+  }
+  
 }
 
 @media(max-width:1000px){
