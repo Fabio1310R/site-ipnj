@@ -40,7 +40,7 @@ body,ul ,p {
   font-weight: normal;
 }
 
-header a {
+header a , footer a{
   color: white;
   text-decoration: none;
   font-family: sans-serif;
@@ -121,38 +121,6 @@ main h1{
 }
 
 
-
-@media(max-width: 600px){
- 
-  .banner img{
-    width: 100vw;
-  }
-  
-  .banner{
-    background-image: none;
-  }
-  .aovivo div{
-    padding: 35px;
-  }
-
-  .aovivo{
-    width: 100vw;
-  }
-
-  .aovivo img{
-    width: 100vw; 
-  }
-  
-  .agenda{
-    width: 100vw;
-  }
-
-  .agenda img{
-    width: 80vw;
-  }
-
-}
-
 @media(max-width:1000px){
   #bancel{
     display: none;
@@ -179,6 +147,40 @@ main section{
 
   }
 
+    .banner img{
+      width:100vw;
+    }
+    
+    .banner{
+      background-image: none;
+    }
+    .aovivo div{
+      padding: 35px;
+      margin: 0px;
+    }
+  
+    .aovivo{
+      width: 100vw;
+      margin: 0px;
+    }
+  
+    .aovivo img{
+      width: 300px; 
+      margin: auto;
+    }
+    
+     .agenda ,div{
+      width: 100vw;
+      margin: 0px;
+  
+    }
+  
+    .agenda div img{
+      width: 300px !important;
+      margin: auto !important;
+    }
+
+    
 }
 
 /*Section 1*/
@@ -201,7 +203,6 @@ main section{
     text-align: justify;
     margin-top: 10px;
     width: 300px;
-    margin:auto;
 }
 
 #bancel{
@@ -220,14 +221,14 @@ main section{
 
 #agenda{
   display:flex;
-  flex-wrap: wrap;
+  flex-wrap: wrap !important;
   background-color: rgba(128, 128, 128, 0.267);
   width: 100vw;
 }
 
 #agenda img{
-  height: 300px;
-  width: 450px;
+  height: 250px;
+  width: 300px;
   margin: 20px;
 }
 
@@ -245,7 +246,7 @@ main section{
 }
 
 #vid div video{
-  height: 90vh;
+  height: 60vh;
   width: 100vw;
 }
 
