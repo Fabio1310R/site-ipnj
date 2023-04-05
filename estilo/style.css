@@ -134,6 +134,14 @@ main h1{
   .aovivo div{
     padding: 35px;
   }
+
+  .aovivo{
+    width: 100vw;
+  }
+
+  .aovivo img{
+    width: 100vw; 
+  }
    
 }
 
