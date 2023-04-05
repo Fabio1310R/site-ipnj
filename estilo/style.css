@@ -1,330 +1,102 @@
 @charset "UTF-8";
 
-@import url('https://fonts.googleapis.com/css2? family= Roboto+Mono:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700 & display=swap' );
+@charset "UTF-8";
 
-@import url('https://fonts.googleapis.com/css2?family= Changa +One:ital@0;1 & display=swap');
 
-@import url('https://fonts.googleapis.com/css2? family= Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100; 1.200;1.300;1.400;1.500;1.600;1.700;1.800;1.900 & display=swap');
-
-* body {
-    padding: 0px;
-    margin: 0;
-}
-
-ul, li ,a {
-    text-decoration: none;
-    list-style: none;
-}
-
-:root{
-    --cor1:#00EB8D;
-    --cor2:#2F9E72;
-    --cor3:#009E5F;
-    --cor4:#206B4D;
-    --cor5:#005131;
-
-    --fonte1: 'Work Sans', sans-serif;
-    --fonte2: 'Roboto Mono';
-    --fonte3:'Changa One', cursive;
-    
-}
-
-*body , ul {
+*{
+    font-family: Arial, Helvetica, sans-serif;
     margin: 0px;
     padding: 0px;
-}
-body{
-   
-    background-image: url('../imagens/fundo2.png');
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
-}
-
-#celula{
-    background-image: url('../imagens/fundocelu.png');
-}
-
-
-a {
     text-decoration: none;
-    color: black;
-    font-family: sans-serif;
+	  list-style: none;
+	  box-sizing: border-box;
 }
-
-a:hover{
-    background-color:#29976b54;
-    text-decoration: underline;
-    border-radius: 6px;
-    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.404);
-    transition: 0.6s;
+:root{
+    --color1: #498758;
+    --color2: #619d69a7;
+    --color3: #4FCEA2;
+    --cor-whatsapp:#34af23;
+    --color-text: #5c5c5c;
+    --color-footer: #000000df;
+    --font-size: clamp(.5rem, 1.1rem + 0.1rem, 4rem);
 }
-#logo{
-    height: 50px;
-    width: 50px;
-    border-radius: 50%;
-    margin-top: 10px;
-   
-}
-
-header h1{
-    font-family: var(--fonte2);
-    font-variant: small-caps;
-    text-align: center;
-    margin-top: 30px;
-    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.274);
-    color: white;
-    
-}
-
-#header{
-    display: flex;
-    height: 70px;
-    align-items: center;
+/*
+header{
+   display: flex;
+    background: linear-gradient(to right, #619d69a7, #619d69a7);
     justify-content: space-between;
-    padding: 1rem;
-    box-sizing: border-box;
-    background-image: linear-gradient(to bottom,#005131,#288d65 );
-    padding: 40px  30px;
-    
+    height: 80px;
+}
+*/
+
+body,
+ul {
+  margin: 0px;
+  padding: 0px;
 }
 
-#menu{
-    display: flex;
-    gap: .5rem;
-    list-style: none;
+header a {
+  color: white;
+  text-decoration: none;
+  font-family: sans-serif;
+  font-size: var(--font-size);
+  /*
+  font-size: 18px;
+  */
+  letter-spacing: 3px;
+  margin-left: 20px;
 }
 
-#menu a{
-    display: block;
-    padding: .5rem;
-    color: white;
-}
-
-#btn-mobile{
-    display: none;
-}
-
-@media(max-width: 800px){
-    #btn-mobile {
-        display: block;
-    }
-    #nav #menu{
-        display: block;
-        visibility: hidden;
-        overflow: hidden;
-        color: white;
-        font-weight: bolder;
-    }   
-        
-    #menu {
-       margin-top: 90px;
-        position: absolute;
-        width: 100%;
-        top:59px;
-        right: 0;
-        height: 0px;
-        transition: .6s;
-        background-color: rgba(0, 0, 0, 0.459);
-        display: block;
-        height: 0px;
-        z-index: 1000;
-    }
-
-    #nav.active #menu{
-        visibility: visible;
-        height: calc(45vh - 70px);
-        
-        border-radius: 0px 0px 0px 10px;
-        box-shadow: 1px 1px 1px black;
-        overflow-y: auto;
-        margin-top: 90px;
-
-    }
-
-    #menu a{
-        padding:1rem 0 ;
-        margin: 0px 1rem;
-        border-bottom: 2px solid rgba(0, 0, 0, 0.151);
-    }
-
-    #btn-mobile{
-        display: flex;
-        padding: .5rem 1rem ;
-        border: none;
-        font-size: 1rem;
-        background: none;
-        gap: 1rem;
-        cursor: pointer;
-        color: white;
-
-    }
-
-    #hamburguer{
-        border-top: 2px solid;
-        width: 20px;
-    }
-
-    #hamburguer::after ,#hamburguer::before{
-        content: '';
-        display: block;
-        width: 20px;
-        height: 2px;
-        margin-top: 5px;
-        background: currentColor;
-        transition: .6s;
-        position: relative;
-
-    }
-
-    #nav.active #hamburguer {
-        border-top-color: transparent;
-    }
-
-    #nav.active #hamburguer::before{
-           transform: rotate(135deg);
-    }
-
-    #nav.active #hamburguer::after {
-      transform: rotate(-135deg);
-      top: -7px;
-    }
-}
-
-@media (max-width: 600px){
-    #header{
-        height: 150px;
-    }
-
-    #btn-mobile{
-        margin-top: 100px;
-    }
-
-}
-
-@media (min-width:600px){
-    #header{
-        height: 150px;
-    }
-    
-    #menu{
-        margin-top: 8rem;
-    }
-
-}
-
-@media (min-width: 1000px){
-    #logo{
-        height: 100px;
-        width: 100px;
-        margin: 1em 0em;
-    }
-}
-
-main section{
-    padding-top: 30px;
-}
-main{
-    max-width: 800px;
-    display: flex;
-    margin: auto;
-    background-color:white;
-    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.37);
-}
-main h1{
-    text-align: center !important;
-    font-family: var(--fonte3);
-}
-main div{
-    display: flex;
-}
-
-main a{
-    background-color: #009e5f4f;
-    border-radius: 5px;
-}
-main a:hover{
-    padding: 7px;
-}
-
-main p {
-    align-items: center;
-    text-align: justify;
-    margin: 2vh 2vw;
-    font-size: 1.2em;
-    font-family: var(--fonte1);
-
-}
-main div img{
-    height: 50vh;
-    width: 60vw;
-    margin: 0 auto;
-    gap: 20px;
-}
-
-@media(min-width: 850px){
-    main div img{
-        height: 40vh;
-        width: 50vw;
-        margin: 0 auto;
-        gap: 20px;
-    }
-}
-
-@media(min-width: 400px){
-    main div img{
-        height: 30vh;
-        width: 50vw;
-        margin: 0 auto;
-        gap: 20px;
-    }
-}
-
-footer{
-    color: white ;
-    background-color: #005131;
-    font-size: 1em;
-    padding: 10px 0;
-    text-align: center;
-    margin: auto;
-
-}
-
-footer h1{
-    text-align: center;
-    
-}
-
-footer .redes{
-    display:block;
-    columns: 2;
-    justify-content: space-between;
-    
+header a:hover {
+    transition: .5s;
+    opacity: 0.7;
+    background-color: var(--color1);
   
 }
 
-
-.redes li{
+.logo-ipnj {
     display: flex;
-    margin-left: 30%;
-    gap: 1em;
+    font-size: var(--font-size);
+    color: white;
+}
+.logo-ipnj img{
+    max-width:120px ;
+    margin-right: 10px;
+}
+#header {
+  box-sizing: border-box;
+  height: 70px;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: linear-gradient(to right, #1d4010, #1e4d0c, #24690b);
 }
 
-.redes a {
-    font-size: 20px;
-    
+#menu {
+text-transform: uppercase;
+  display: flex;
+  list-style: none;
+  gap: 0.5rem;
+}
+
+#menu a {
+  display: block;
+  padding: 0.5rem;
+}
+
+#btn-mobile {
+  display: none;
 }
 
 
-#estu{
+/* MAIN*/
+.banner{
     display: flex;
-    padding-top: 40px;
+    background-image: url('../imagens/fundo1.jpg');
 }
 
-
-#play{
-    display: flex;
-    margin: auto;
+.banner img{
+   margin: auto;
+   wi
 }
-
