@@ -1,9 +1,9 @@
 @charset "UTF-8";
 
-@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
 
 
-*{
+* {
     font-family: Arial, Helvetica, sans-serif;
     margin: 0px;
     padding: 0px;
@@ -19,6 +19,8 @@
     --color-text: #5c5c5c;
     --color-footer: #000000df;
     --font-size: clamp(.5rem, 1.1rem + 0.1rem, 4rem);
+
+    --fonte1:'Open Sans', sans-serif;
 }
 /*
 header{
@@ -47,7 +49,7 @@ header a {
   margin-left: 20px;
 }
 
-header a:hover {
+#header a:hover {
     transition: .5s;
     opacity: 0.7;
     background-color: var(--color1);
@@ -68,6 +70,7 @@ header a:hover {
   height: 70px;
   padding: 1rem;
   display: flex;
+  width: 100vw;
   align-items: center;
   justify-content: space-between;
   background: linear-gradient(to right, #1d4010, #1e4d0c, #24690b);
@@ -78,11 +81,14 @@ text-transform: uppercase;
   display: flex;
   list-style: none;
   gap: 0.5rem;
+ 
 }
 
 #menu a {
   display: block;
   padding: 0.5rem;
+  border-radius: 5px;
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.253);
 }
 
 #btn-mobile {
@@ -91,12 +97,157 @@ text-transform: uppercase;
 
 
 /* MAIN*/
+
+main h1{
+  text-align: center;
+  font-family: 'Open Sans', sans-serif;
+  font-variant: small-caps;
+}
+
+
 .banner{
     display: flex;
     background-image: url('../imagens/fundo1.jpg');
+    background-position: center center;
+    background-size: cover;
 }
 
 .banner img{
    margin: auto;
-   wi
+
+}
+
+
+
+@media(max-width: 600px){
+ 
+  .banner img{
+    width: 100vw;
+  }
+  
+  .banner{
+    background-image: none;
+  }
+  .aovivo div{
+    padding: 35px;
+  }
+   
+}
+
+@media(max-width:1000px){
+  #bancel{
+    display: none;
+  }
+
+}
+
+
+main section{
+  margin-bottom: 50px;
+}
+
+#ban2{
+  display: none;
+}
+
+@media(max-width: 600px){
+  #ban2{
+    display: block;
+    height: 200px;
+    width: 100vw;
+    margin-bottom: 30px;
+    margin-top: -80px;
+
+  }
+}
+
+/*Section 1*/
+
+.aovivo{
+  display: flex;
+  flex-wrap: wrap;
+}     
+
+.aovivo div{
+  margin: 10px;
+}
+.aovivo div img{
+  height: 301px;
+  width: 320px;
+  
+}
+
+.aovivo p{
+    text-align: justify;
+    margin-top: 10px;
+    width: 300px;
+    margin:auto;
+}
+
+#bancel{
+  height: 400px;
+  width: 300px;
+  margin-top: 50px;
+  position: absolute;
+}
+
+
+/*SECTION AGENDA*/
+#agenda h1{
+  text-align: center;
+  margin: 20px;
+}
+
+#agenda{
+  display:flex;
+  flex-wrap: wrap;
+  background-color: rgba(128, 128, 128, 0.267);
+  width: 100vw;
+}
+
+#agenda img{
+  height: 300px;
+  width: 450px;
+  margin: 20px;
+}
+
+#agenda div{
+  margin: auto;
+}
+
+
+/*SECTION VIDEO*/
+
+#vid{
+  height: 500px;
+  width: 100vw;
+  box-shadow: 3px 30px 16px rgba(0, 0, 0, 0.11);
+}
+
+#vid div video{
+  height: 90vh;
+  width: 100vw;
+}
+
+@media(min-width:850px){
+  #vid div video{
+    height: 70vh;
+  }
+}
+
+
+/*footer*/
+
+footer{
+  height: 100px;
+  background: linear-gradient(to right, #1d4010, #1e4d0c, #24690b);
+}
+
+footer h1{
+  text-align: center;
+}
+
+footer ul{
+  columns: 2;
+  text-align: center;
 }
