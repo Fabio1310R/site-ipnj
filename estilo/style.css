@@ -33,6 +33,12 @@ header{
 }
 */
 
+body,html{
+  overflow-x: hidden;
+}
+
+
+
 body,ul ,p {
   margin: 0px;
   padding: 0px;
@@ -91,7 +97,6 @@ text-transform: uppercase;
   display: block;
   padding: 0.5rem;
   border-radius: 5px;
-  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.253);
 }
 
 #btn-mobile {
@@ -103,8 +108,10 @@ text-transform: uppercase;
 
 main h1{
   text-align: center;
+  margin: 20px 0px;
   font-family: 'Open Sans', sans-serif;
-  font-variant: small-caps;
+  text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.185);
+
 }
 
 
@@ -125,7 +132,7 @@ main h1{
 }
 
 
-@media (min-width:1250px){
+@media (min-width:1400px){
   #bancel{
     display: block;
   }
@@ -139,16 +146,19 @@ main section{
 
 #ban2{
   display: none;
+ 
 }
 
 @media(max-width: 600px), (max-width: 1400px){
+  .banner img{
+    width: 100vw;
+  }
+  
   #ban2{
     display: block;
     height: 300px;
     width: 100vw;
     margin-bottom: 30px;
-    margin-top: -80px;
-
   }
 
   .aovivo{
@@ -168,29 +178,19 @@ main section{
     font-size: 1.5em;
 
   }
-  
-    
-     .agenda ,div{
-      width: 100vw;
-      margin: 0px;
-  
-    }
-  
-    .agenda div img{
-      width: 300px !important;
-      margin: auto !important;
-    }
-
     
 }
 
+
+
 /*Section 1*/
- .aovivo{
-  background-color: gray;
- }
+
 .aovivo{
   display: flex;
   flex-wrap: wrap;
+  background-color: gray;
+  text-align: center;
+  
 }     
 
 .aovivo div{
@@ -222,8 +222,20 @@ main section{
     display: block;
     text-align: center;
   }
+ 
 }
 
+@media(min-width: 900px),(max-width: 1300px){
+  .aovivo div{
+    margin-left: 100px;
+  }
+}
+
+@media(min-width:1399px){
+  .aovivo div{
+    margin-left: 10px;
+  }
+}
  
 
 
@@ -249,27 +261,49 @@ main section{
 }
 
 #agenda div{
+  width: 300px;
   margin: auto;
+
 }
+
 
 
 /*SECTION VIDEO*/
 
 #vid{
   height: 500px;
+  background-color: #5c5c5c63;
   width: 100vw;
+  display: flex;
   box-shadow: 3px 30px 16px rgba(0, 0, 0, 0.11);
 }
 
-#vid div video{
-  height: 50vh;
-  width: 100vw;
+@media(min-width:600px){
+  #vid div video{
+    height: 500px;
+    margin: 50px 50px 0px 40px;
+    width: 90vw;
+    justify-content: center;
+  }
+  
 }
 
-@media(min-width:850px){
+@media(min-width:850px),(max-width:5000px){
   #vid div video{
     height: 70vh;
   }
+
+
+@media (max-width: 600px){
+   #vid{
+    height: 300px;
+   }
+  #vid  video{
+    width:500px;
+    height: 300px !important;
+    margin: 0px 0px 40px 0px!important;
+  }
+
 }
 
 
@@ -278,6 +312,8 @@ main section{
 footer{
   height: 100px;
   background: rgb(73, 72, 72);
+  margin-top: 20px;
+
 }
 
 footer h1{
