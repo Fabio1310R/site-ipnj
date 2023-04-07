@@ -144,6 +144,8 @@ main section{
   margin-bottom: 50px;
 }
 
+
+
 #ban2{
   display: none;
  
@@ -194,7 +196,7 @@ main section{
 }     
 
 .aovivo div{
-  margin: 10px;
+  margin: auto;
   text-align: center;
 }
 .aovivo div img{
@@ -325,4 +327,4 @@ footer h1{
 footer ul{
   columns: 2;
   text-align: center;
-}
+} 
