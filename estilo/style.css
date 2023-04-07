@@ -229,10 +229,8 @@ main section{
   .aovivo div{
     display: block;
     text-align: center;
-  }
-  .aovivo div{
-    text-align: justify;
-    background-color: #cac7c742;
+    flex-direction: column;
+    color: aliceblue;
   }
 }
 
