@@ -228,9 +228,9 @@ main section{
 @media(min-width:300px),(max-width:550px){
   .aovivo div{
     display: block;
-    text-align: center;
+    
     flex-direction: column;
-    color: aliceblue;
+    color: rgb(17, 119, 207);
     padding: 15px;
   }
 }
