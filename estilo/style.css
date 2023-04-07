@@ -230,8 +230,9 @@ main section{
     display: block;
     text-align: center;
   }
-  .aovivo img{
-    margin-left: 20px;
+  .aovivo div{
+    text-align: justify;
+    background-color: #cac7c742;
   }
 }
 
