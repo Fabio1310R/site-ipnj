@@ -37,6 +37,10 @@ body,html{
   overflow-x: hidden;
 }
 
+body{
+  overflow-y: hidden;
+}
+
 
 
 body,ul ,p {
@@ -120,11 +124,12 @@ main h1{
     background-image: url('../imagens/fundo1.jpg');
     background-position: center center;
     background-size: cover;
+    
 }
 
 .banner img{
    margin: auto;
-
+   
 }
 
 #bancel{
@@ -198,11 +203,12 @@ main section{
 .aovivo div{
   margin: auto;
   text-align: center;
+ 
 }
 .aovivo div img{
   height: 301px;
   width: 320px;
-  
+
 }
 
 .aovivo p{
@@ -224,7 +230,9 @@ main section{
     display: block;
     text-align: center;
   }
- 
+  .aovivo img{
+    margin-left: 20px;
+  }
 }
 
 @media(min-width: 900px),(max-width: 1300px){
