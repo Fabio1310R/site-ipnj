@@ -231,6 +231,7 @@ main section{
     text-align: center;
     flex-direction: column;
     color: aliceblue;
+    padding: 15px;
   }
 }
 
