@@ -299,6 +299,7 @@ main section{
     margin: 50px 50px 0px 40px;
     width: 90vw;
     justify-content: center;
+    width: 100vw;
   }
   
 }
@@ -306,6 +307,7 @@ main section{
 @media(min-width:850px),(max-width:5000px){
   #vid div video{
     height: 70vh;
+    width: 100vw;
   }
 
 
@@ -314,7 +316,7 @@ main section{
     height: 300px;
    }
   #vid  video{
-    width:500px;
+    width: 100vw;
     height: 300px !important;
     margin: 0px 0px 40px 0px!important;
   }
