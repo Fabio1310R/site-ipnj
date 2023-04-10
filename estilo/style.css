@@ -23,6 +23,7 @@
     --font-size: clamp(.5rem, 1.1rem + 0.1rem, 4rem);
 
     --fonte1:'Open Sans', sans-serif;
+    --fonte2:'Manrope', sans-serif;
 }
 /*
 header{
@@ -308,6 +309,7 @@ main section{
   #vid div video{
     height: 70vh;
     width: 100vw;
+  }
   }
 
 
